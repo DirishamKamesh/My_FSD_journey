@@ -177,61 +177,34 @@ Every folder contains:
 - Mini Projects
 - Notes (where applicable)
 
+# My FSD Journey
+
+Welcome to my Full Stack Development learning journey repository!
+
 ---
-## 🚀 Git Git Guide & Commands Workflow
 
-Use this quick reference guide to manage your daily development workflow in this repository.
+## 🚀 Git Setup & Push Commands
 
-### 1. Initialization and Setup
-If you are starting fresh or configuring your local setup:
-```bash
-# Clone the repository to your local machine
-git clone https://github.com
+Use these commands to set up, commit, and push your project to GitHub.
 
-# Navigate into the project folder
-cd My_FSD_journey
-
-# Verify the connection to the correct remote repository
-git remote -v
-```
-
-### 2. Daily Development Workflow
-Follow these steps every time you work on your HTML, CSS, or JavaScript projects:
+### First Time Setup & Initial Push
 
 ```bash
-# Step 1: Check your current status to see modified or untracked files
-git status
+# 1. Initialize local Git repository (if not already done)
+git init
 
-# Step 2: Stage specific changes or folders (e.g., your HTML templates)
-git add FRONTEND/HTML\ Revision/
-
-# OR stage all modified and new files at once
+# 2. Stage all files
 git add .
 
-# Step 3: Commit your changes with a descriptive message
-git commit -m "feat: add comprehensive HTML5 form component"
-```
+# 3. Commit staged files
+git commit -m "Initial commit"
 
-### 3. Synchronizing with GitHub
-Keep your online repository updated or fetch updates if you work across different machines:
+# 4. Rename default branch to main
+git branch -M main
 
-```bash
-# Push your local commits up to the main branch on GitHub
-git push origin main
+# 5. Connect local repository to GitHub
+git remote add origin [https://github.com/DirishamKamesh/My_FSD_journey.git](https://github.com/DirishamKamesh/My_FSD_journey.git)
 
-# Pull down the latest updates from GitHub if changes were made online
-git pull origin main
-```
-
-### 4. Code Maintenance & Safety Checks
-Useful commands for inspecting logs or fixing mistakes before staging them:
-
-```bash
-# View your historical timeline of updates and commit IDs
-git log --oneline
-
-# Undo modifications in a local file back to the last saved commit state
-git checkout -- filename.html
-```
-
+# 6. Push local code to GitHub
+git push -u origin main
 ## ⭐ If you find this repository useful, consider giving it a star!
